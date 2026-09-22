@@ -26,7 +26,8 @@ const days = [...html.matchAll(/<td[^>]*class="ContributionCalendar-day"[^>]*>/g
       label,
     };
   })
-  .filter((day) => day.date);
+  .filter((day) => day.date)
+  .sort((a, b) => a.date.localeCompare(b.date));
 
 if (days.length < 350) throw new Error(`Calendário incompleto: ${days.length} dias`);
 
