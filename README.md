@@ -5,7 +5,7 @@
 ### Produtos digitais, inteligência artificial e automações que trabalham de verdade.
 
 [![GitHub Pages](https://img.shields.io/badge/abrir_portfólio-ef6457?style=for-the-badge&logo=github&logoColor=white)](https://jvalvim-bit.github.io/Victor-Dev-PortfolioOfc/)
-[![Status](https://img.shields.io/github/actions/workflow/status/jvalvim-bit/Victor-Dev-PortfolioOfc/pages.yml?style=for-the-badge&label=deploy)](https://github.com/jvalvim-bit/Victor-Dev-PortfolioOfc/actions)
+[![GitHub Pages](https://img.shields.io/badge/deploy-main_branch-24292f?style=for-the-badge&logo=github)](https://jvalvim-bit.github.io/Victor-Dev-PortfolioOfc/)
 [![License](https://img.shields.io/badge/uso-portfólio_pessoal-ead99e?style=for-the-badge)](#)
 
 </div>
@@ -59,8 +59,6 @@ Victor-Dev-PortfolioOfc/
 │   └── victor-profile.jpg
 ├── scripts/
 │   └── sync-github.mjs
-├── .github/workflows/
-│   └── pages.yml
 ├── github-data.js
 ├── index.html
 ├── script.js
@@ -85,11 +83,11 @@ O script consulta o calendário público do perfil `jvalvim-bit` e recria o arqu
 node scripts/sync-github.mjs
 ```
 
-O workflow do GitHub Pages executa essa sincronização em cada publicação, mantendo datas, níveis e tooltips atualizados.
+Execute o script antes de uma nova publicação para manter datas, níveis e tooltips atualizados.
 
 ## Publicação
 
-O deploy é realizado automaticamente pelo **GitHub Actions** sempre que há um push na branch `main`. O site publicado fica disponível em:
+O GitHub Pages publica diretamente o conteúdo estático da branch `main`. O site fica disponível em:
 
 **https://jvalvim-bit.github.io/Victor-Dev-PortfolioOfc/**
 
